@@ -1,0 +1,1 @@
+INSERT INTO tb_register (name, course, date) VALUES ('Milton', 'Analise e desenvolvimento de sistemas', now());
