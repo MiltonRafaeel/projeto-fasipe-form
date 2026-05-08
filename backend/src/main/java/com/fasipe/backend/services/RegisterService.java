@@ -26,6 +26,7 @@ public class RegisterService {
 
 	public void copyDtoToEntity(RegisterDTO dto, Register entity) {
 		entity.setName(dto.getName());
+		entity.setCompanion(dto.getCompanion());
 		entity.setCourse(dto.getCourse());
 		entity.setDate(Instant.now());
 	}

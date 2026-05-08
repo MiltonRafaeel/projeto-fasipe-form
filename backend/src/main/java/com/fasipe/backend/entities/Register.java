@@ -17,6 +17,7 @@ public class Register {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
+	private Integer companion;
 	private String course;
 	private Instant date;
 	
@@ -24,9 +25,10 @@ public class Register {
 		
 	}
 
-	public Register(Long id, String name, String course, Instant date) {
+	public Register(Long id, String name, Integer companion, String course, Instant date) {
 		this.id = id;
 		this.name = name;
+		this.companion = companion;
 		this.course = course;
 		this.date = date;
 	}
@@ -45,6 +47,14 @@ public class Register {
 
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public Integer getCompanion() {
+		return companion;
+	}
+	
+	public void setCompanion(Integer companion) {
+		this.companion = companion;
 	}
 
 	public String getCourse() {

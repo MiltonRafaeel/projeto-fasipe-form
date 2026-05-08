@@ -13,6 +13,8 @@ public class RegisterDTO {
 	@NotBlank(message = "campo requerido")
 	private String name;
 	
+	private Integer companion;
+	
 	@Size(min = 8, max = 60, message = "nome precisa ser de 8 a 60 caracter")
 	@NotBlank(message = "campo requerido")
 	private String course;
@@ -30,12 +32,17 @@ public class RegisterDTO {
 	
 	public RegisterDTO(Register entity) {
 		name = entity.getName();
+		companion = entity.getCompanion();
 		course = entity.getCourse();
 		date = entity.getDate();	
 	}
 
 	public String getName() {
 		return name;
+	}
+	
+	public Integer getCompanion() {
+		return companion;
 	}
 
 	public String getCourse() {
