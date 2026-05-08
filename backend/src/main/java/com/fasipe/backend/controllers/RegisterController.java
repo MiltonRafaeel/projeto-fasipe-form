@@ -13,6 +13,8 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.fasipe.backend.dto.RegisterDTO;
 import com.fasipe.backend.services.RegisterService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping(value = "/registers")
 public class RegisterController {
@@ -21,7 +23,7 @@ public class RegisterController {
 	private RegisterService service;
 	
 	@PostMapping
-	public ResponseEntity<RegisterDTO> insert(@RequestBody RegisterDTO dto) {
+	public ResponseEntity<RegisterDTO> insert(@Valid @RequestBody RegisterDTO dto) {
 		dto = service.insert(dto);
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
 				.buildAndExpand(dto.getName()).toUri();
