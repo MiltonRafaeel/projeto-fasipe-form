@@ -5,6 +5,7 @@ import java.time.Instant;
 import com.fasipe.backend.entities.Register;
 
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.PositiveOrZero;
 import jakarta.validation.constraints.Size;
 
 public class RegisterDTO {
@@ -13,6 +14,7 @@ public class RegisterDTO {
 	@NotBlank(message = "campo requerido")
 	private String name;
 	
+	@PositiveOrZero(message = "o valor deve ser 0 ou mais")
 	private Integer companion;
 	
 	@Size(min = 8, max = 60, message = "nome precisa ser de 8 a 60 caracter")
