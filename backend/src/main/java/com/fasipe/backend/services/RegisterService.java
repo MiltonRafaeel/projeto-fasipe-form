@@ -9,12 +9,15 @@ import com.fasipe.backend.dto.RegisterDTO;
 import com.fasipe.backend.entities.Register;
 import com.fasipe.backend.repositories.RegisterRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class RegisterService {
 
 	@Autowired
 	private RegisterRepository repository;
 
+	@Transactional
 	public RegisterDTO insert(RegisterDTO dto) {
 
 		Register entity = new Register();
@@ -25,6 +28,7 @@ public class RegisterService {
 	}
 
 	public void copyDtoToEntity(RegisterDTO dto, Register entity) {
+		entity.setId(dto.getId());
 		entity.setName(dto.getName());
 		entity.setCompanion(dto.getCompanion());
 		entity.setCourse(dto.getCourse());

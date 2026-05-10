@@ -10,6 +10,8 @@ import jakarta.validation.constraints.Size;
 
 public class RegisterDTO {
 	
+	private Long id;
+	
 	@Size(min = 8, max = 80, message = "nome precisa ser de 8 a 80 caracter")
 	@NotBlank(message = "campo requerido")
 	private String name;
@@ -33,10 +35,15 @@ public class RegisterDTO {
 	}
 	
 	public RegisterDTO(Register entity) {
+		id = entity.getId();
 		name = entity.getName();
 		companion = entity.getCompanion();
 		course = entity.getCourse();
 		date = entity.getDate();	
+	}
+	
+	public Long getId() {
+		return id;
 	}
 
 	public String getName() {
