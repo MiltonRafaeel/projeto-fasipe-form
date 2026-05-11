@@ -16,10 +16,10 @@ public class RegisterDTO {
 	@NotBlank(message = "campo requerido")
 	private String name;
 	
-	@PositiveOrZero(message = "o valor deve ser 0 ou mais")
+	@PositiveOrZero(message = "por favor, preencher a quantidade de convidados")
 	private Integer companion;
 	
-	@Size(min = 5, max = 60, message = "nome precisa ser de 5 a 60 caracter")
+	@Size(min = 5, max = 60, message = "por favor, preencher o campo curso")
 	@NotBlank(message = "campo requerido")
 	private String course;
 	private Instant date;
