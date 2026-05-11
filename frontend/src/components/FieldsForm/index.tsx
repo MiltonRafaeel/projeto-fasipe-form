@@ -5,7 +5,7 @@ export default function FieldsForm() {
 
     return (
         <div className="fields-form-container">
-            <form action="" className="fields=form">
+            <form action="" className="fields-form">
                 <input className="fields-form__input" name="name" type="text" placeholder="Digite seu nome" />
                 <input className="fields-form__input" name="number" type="number" placeholder="Quantidade de acompanhantes" />
                 <input

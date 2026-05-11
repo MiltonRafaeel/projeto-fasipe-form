@@ -4,7 +4,7 @@ export default function Button() {
 
   return (
     <div>
-      <button className="submit-button">Enviar</button>
+      <button type="submit" className="submit-button">Enviar</button>
     </div>
   );
 }
