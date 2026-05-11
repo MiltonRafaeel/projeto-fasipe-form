@@ -3,8 +3,6 @@ import './styles.css';
 export default function Button() {
 
   return (
-    <div>
-      <button type="submit" className="submit-button">Enviar</button>
-    </div>
+      <button type="submit" className="submit-button">Enviar Cadastro</button>
   );
 }
