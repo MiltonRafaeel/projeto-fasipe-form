@@ -2,11 +2,10 @@ import './styles.css';
 
 export default function Footer() {
 
-    return(
-      <footer>
-            <div>
-                <p>Feito por: @Milton.Rafaeel</p>
-            </div>
+    return (
+        <footer className="footer">
+            <p className="footer-text">Feito por:</p>
+            <a className="footer-link" href=""></a>
         </footer>
     );
 }

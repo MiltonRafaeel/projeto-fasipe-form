@@ -4,11 +4,12 @@ import './styles.css';
 export default function FieldsForm() {
 
     return (
-        <div>
-            <form action="">
-                <input name="name" type="text" placeholder="Digite seu nome" />
-                <input name="number" type="number" placeholder="Quantidade de acompanhantes" />
+        <div className="fields-form-container">
+            <form action="" className="fields=form">
+                <input className="fields-form__input" name="name" type="text" placeholder="Digite seu nome" />
+                <input className="fields-form__input" name="number" type="number" placeholder="Quantidade de acompanhantes" />
                 <input
+                    className="fields-form__input"
                     name="course"
                     type="text"
                     placeholder="Selecione ou digite seu curso"
