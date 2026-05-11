@@ -25,30 +25,29 @@
     object-fit: contain;
 }
 
-.fields-form {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    width: 100%;
-}
-
 .fields-form-input {
+    margin-bottom: 30px;
     width: 100%;
     box-sizing: border-box;
     padding: 16px 18px;
     font-size: 1rem;
     border-radius: 12px;
-    border: 1px solid #2a2a2a;
-    background-color: #2b2b2b;
+    border: 1px solid #333;
+    background-color: #222;
     color: #ffffff;
     outline: none;
-    transition: border 0.2s;
+    transition: all 0.3s ease;
 }
 
 .fields-form-input::placeholder {
-    color: #888888;
+    color: #777;
 }
 
 .fields-form-input:focus {
     border-color: #00ff64;
+    box-shadow: 0 0 10px rgba(0, 255, 100, 0.1);
+}
+
+input[list]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
 }
