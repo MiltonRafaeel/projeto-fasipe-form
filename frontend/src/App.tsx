@@ -11,9 +11,7 @@ function App() {
         <FieldsForm />
         <Button />
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <Footer />
     </>
   )
 }

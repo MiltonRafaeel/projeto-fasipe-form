@@ -1,3 +1,4 @@
+import Button from '../Button';
 import './styles.css';
 
 export default function FieldsForm() {
@@ -24,6 +25,7 @@ export default function FieldsForm() {
                     <option value="Ciência da Computação" />
                     <option value="Engenharia da Computação" />
                 </datalist>
+                <Button />
             </form>
         </div>
     );
