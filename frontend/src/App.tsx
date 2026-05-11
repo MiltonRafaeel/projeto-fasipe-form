@@ -9,7 +9,6 @@ function App() {
     <>
       <main>
         <FieldsForm />
-        <Button />
       </main>
       <Footer />
     </>
