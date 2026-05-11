@@ -1,9 +1,20 @@
 import './App.css'
+import Button from './components/Button'
+import FieldsForm from './components/FieldsForm'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
-   <h1>Teste</h1>
+    <>
+      <main>
+        <FieldsForm />
+        <Button />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
+    </>
   )
 }
 
