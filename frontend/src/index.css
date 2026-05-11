@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
 :root {
-  --form-font-primary: #00ff08;
+  --form-font-primary: #00ff66;
+  --form-font-secondary: #b7ffc8;
+  --bg-dark: #050505;
+  --bg-dark-soft: #101010;
+  --card-bg: rgba(18, 18, 18, 0.92);
+  --border-soft: rgba(255, 255, 255, 0.08);
+  --input-bg: rgba(255, 255, 255, 0.04);
+  --input-border: rgba(255, 255, 255, 0.1);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --shadow-green: rgba(0, 255, 102, 0.2);
+  --shadow-dark: rgba(0, 0, 0, 0.45);
 }
 
 * {
@@ -14,3 +25,65 @@
 
 /*-----------------------------------------------------------------*/
 /* generic styles */
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(0, 255, 102, 0.14), transparent 25%),
+    radial-gradient(circle at bottom, rgba(0, 255, 102, 0.08), transparent 30%),
+    linear-gradient(180deg, #020202 0%, #090909 100%);
+  color: var(--text-primary);
+}
+
+main {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 16px;
+}
+
+input,
+button {
+  font: inherit;
+}
+
+button {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: rgba(0, 255, 102, 0.25);
+  color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 255, 102, 0.25);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 102, 0.4);
+}

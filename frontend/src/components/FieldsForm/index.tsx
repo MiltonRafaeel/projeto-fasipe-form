@@ -1,15 +1,19 @@
 import Button from '../Button';
+import logoFasipe from '../../assets/fasipe_cuiaba_logo.png';
 import './styles.css';
 
 export default function FieldsForm() {
 
     return (
         <div className="fields-form-container">
+            <div className="fields-form-logo-wrapper">
+                <img src={logoFasipe} alt="logo fasipe" className="fields-form-logo" />
+            </div>
             <form action="" className="fields-form">
-                <input className="fields-form__input" name="name" type="text" placeholder="Digite seu nome" />
-                <input className="fields-form__input" name="number" type="number" placeholder="Quantidade de acompanhantes" />
+                <input className="fields-form-input" name="name" type="text" placeholder="Digite seu nome" />
+                <input className="fields-form-input" name="number" type="number" placeholder="Quantidade de acompanhantes" />
                 <input
-                    className="fields-form__input"
+                    className="fields-form-input"
                     name="course"
                     type="text"
                     placeholder="Selecione ou digite seu curso"

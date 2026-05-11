@@ -1,0 +1,28 @@
+.submit-button {
+    width: 100%;
+    height: 56px;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #00d955 0%, #00ff66 100%);
+    color: #04150a;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s ease;
+    box-shadow: 0 10px 28px var(--shadow-green);
+}
+
+.submit-button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.04);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.submit-button:focus {
+    outline: none;
+    box-shadow:
+        0 10px 28px var(--shadow-green),
+        0 0 0 4px rgba(0, 255, 102, 0.16);
+}
