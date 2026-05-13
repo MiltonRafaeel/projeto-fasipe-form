@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Docker & Data
+docker-compose.yml
+.data/
+
+# OS specific files
+.DS_Store
+Thumbs.db
